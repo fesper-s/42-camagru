@@ -1,0 +1,28 @@
+{
+  "name": "42-camagru",
+  "version": "1.0.0",
+  "description": "Instagram-like website that allows users to create and share photomontage.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run services:up && next dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
+    "commit": "cz"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
