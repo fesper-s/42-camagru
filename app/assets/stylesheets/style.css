@@ -1,0 +1,19 @@
+.navbar {
+  padding: 0.5rem 0;
+}
+
+.navbar-text {
+  font-size: 1.5rem;
+  color: #262626;
+}
+
+.navbar-brand {
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}

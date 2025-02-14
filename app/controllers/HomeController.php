@@ -1,6 +1,7 @@
 <?php
 class HomeController {
   public function index() {
-    require_once __DIR__ . '/../views/home/index.php';
+    $content = '../app/views/home/index.php';
+    require_once '../app/views/layouts/default.php';
   }
 }
